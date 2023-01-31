@@ -1,0 +1,90 @@
+body{
+    font-family: Helvetica;
+    background-color: #d9d9d9;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#header{
+    font-size: 40px;
+    padding-top: 50px;  
+}
+
+#header span::after{
+    margin-top: 20px;
+    content: '';
+    display: block;
+    position: relative;
+    width: 6%;
+    border-top: 2px solid black;
+}
+
+#content{
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inStock {
+    border-radius: 3px;
+    background-color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.inStock p{
+    display: inline-flex;
+    padding: 3px;
+    margin: 10px;
+}
+
+
+#stockPrice{
+    width: 15%;
+}
+
+#stockName{
+    width: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.notInStock{
+    display: none;
+}
+
+#clickMe{
+    border: 1px solid black;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#clickMe:hover{
+    cursor:pointer;
+}
+
+.darkMode{
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.darkMode .inStock{
+    background-color: #313131;
+    box-shadow: 1px 1px 3px white;
+}
+
+.darkMode #clickMe{
+    border: 1px solid white;
+}
+
+.darkMode #header span::after{
+    margin-top: 20px;
+    content: '';
+    display: block;
+    position: relative;
+    width: 6%;
+    border-top: 2px solid white;
+}
